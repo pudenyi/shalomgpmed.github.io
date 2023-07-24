@@ -1,0 +1,231 @@
+/* ====================
+##. Hero Area
+==================== */
+.hero{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/hillcountry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border: 2px solid #335E3B;
+  color: #335E3B;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #355E3B;
+  color: #fff;
+}
+
+/* ====================
+##. Breadcrumb Area
+==================== */
+.breadcrumb-area {
+  background-image: url("images/aboutbackground.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  position: relative;
+}
+
+.breadcrumb-area:before {
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.breadcrumb-area h2 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.breadcrumb-area ul li {
+  color: white;
+}
+
+.breadcrumb-area ul li a {
+  color: white;
+}
+
+.breadcrumb-area ul li a:hover {
+  color: white;
+}
+
+.breadcrumb-area ul li i {
+  color: white;
+  margin-right: 8px;
+}
+
+/* ====================
+##. DOCTOR
+==================== */
+
+@media (min-width:768px) {
+  .provider-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    padding: 3%;
+  }
+}
+
+@media (max-width:768px) {
+  .provider-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+  }
+
+  .provider-container {
+    padding: 3%;
+  }
+}
+
+.provider-container {
+  line-height: 1.3;
+}
+
+.provider-container h3, p {
+  font-size: 1.25rem;
+}
+
+.provider-title {
+  color: #355E3B;
+}
+
+/* ====================
+##. Welcome
+==================== */
+
+.welcome-subq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .welcome-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%;
+    padding: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .welcome-container{
+    padding: 3%;
+  }
+}
+
+/* ====================
+##. ACTION CALL
+==================== */
+.action-call-container {
+  padding: 3%;
+}
+
+.schedule-appt, .patient-portal {
+  text-align: center; 
+  padding-left: 3%;
+  padding-right: 3%;
+  line-height: 1.3;
+}
+
+.schedule-appt h2, .patient-portal h2 {
+  font-size: 1.5rem;
+}
+
+.schedule-appt p, .patient-portal p {
+  font-size: 1.25rem;
+}
+
+
+@media (min-width:768px) {
+  .action-call-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+  }
+  .schedule-appt {
+    border-right: 1px solid black;
+  }
+}
+
+ion-icon {
+  font-size: 64px;
+}
+
+.icon-container {
+  margin-bottom: 3%;
+}
+
+.text-link {
+  color: #355E3B; 
+  text-decoration: underline;
+}
+
+/* ====================
+##. About Area
+==================== */
+
+/* Custom CSS for the smaller images */
+.small-image {
+  width: 400px;
+  height: 250px;
+}
+
+/* ====================
+##. Card
+==================== */
+
+/* Custom CSS for the card styling */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ====================
+##. Temporary
+==================== */
+
+.temp-container {
+  height: 40vh; 
+  background-color: #335E3B; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.temp-subq {
+  background-color: white; 
+  width: 90%; 
+  height: 80%; 
+  display: grid; 
+  place-content: center; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+}

@@ -6,48 +6,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("images/hillcountry.jpg");
+  background-image: url("images/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.button {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  border: 2px solid #335E3B;
-  color: #335E3B;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #355E3B;
-  color: #fff;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #335E3B !important;
+  border-color: #335E3B !important;
 }
 
 /* ====================
 ##. Breadcrumb Area
 ==================== */
 .breadcrumb-area {
-  background-image: url("images/aboutbackground.jpeg");
+  background-image: url("images/breadcrumb-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 80px 0;
   position: relative;
-}
-
-.breadcrumb-area:before {
-  position: absolute;
-  content: '';
-  background: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 .breadcrumb-area h2 {
@@ -117,15 +99,16 @@
 ##. Welcome
 ==================== */
 
-.welcome-subq{
+.two-subq{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 3%;
 }
 
 @media screen and (min-width: 1024px) {
-  .welcome-container{
+  .two-col{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1%;
@@ -134,55 +117,24 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .welcome-container{
+  .two-col{
     padding: 3%;
   }
 }
 
 /* ====================
-##. ACTION CALL
+##. SCHEDULE BUTTON
 ==================== */
-.action-call-container {
-  padding: 3%;
+.btn-green-outline {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.schedule-appt, .patient-portal {
-  text-align: center; 
-  padding-left: 3%;
-  padding-right: 3%;
-  line-height: 1.3;
-}
-
-.schedule-appt h2, .patient-portal h2 {
-  font-size: 1.5rem;
-}
-
-.schedule-appt p, .patient-portal p {
-  font-size: 1.25rem;
-}
-
-
-@media (min-width:768px) {
-  .action-call-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-  }
-  .schedule-appt {
-    border-right: 1px solid black;
-  }
-}
-
-ion-icon {
-  font-size: 64px;
-}
-
-.icon-container {
-  margin-bottom: 3%;
-}
-
-.text-link {
-  color: #355E3B; 
-  text-decoration: underline;
+.btn-green-outline:hover {
+  background-color: #fff;
+  color: #335E3B;
 }
 
 /* ====================

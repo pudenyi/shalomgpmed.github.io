@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("images/hero-img.jpg");
+  background-image: url("images/hillcountry.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,6 +55,20 @@
 .breadcrumb-area ul li i {
   color: white;
   margin-right: 8px;
+}
+
+/* ====================
+##. ALTERNATING COLUMNS
+==================== */
+@media screen and (min-width:768px) {
+  .alternate-1{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .alternate-2{
+    display: none;
+  }
 }
 
 /* ====================

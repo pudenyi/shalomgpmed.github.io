@@ -14,6 +14,21 @@
   font-size: 1rem;
 }
 
+.top-bar a {
+  color: #fff; /* Text color for links */
+  text-decoration: none; /* Remove underlines from links */
+  margin-left: 0px; /* Add space between links */
+  padding-right: 20px; /* Add padding to the right */
+}
+
+.top-bar a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.top-bar i {
+  margin-right: 0; /* Adjust the margin-right value as needed */
+}
+
 /* ====================
 ##. Nav Bar Area
 ==================== */
@@ -30,7 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/hillcountry.jpg");
+  background-image: url("../images/hillcountry.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -40,7 +55,7 @@
 ##. Breadcrumb Area
 ==================== */
 .breadcrumb-area {
-  background-image: url("../images/breadcrumb-img.jpg");
+  background-image: url("../images/breadcrumb-img.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

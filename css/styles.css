@@ -2,45 +2,56 @@
 ##. Top Bar
 ==================== */
 .top-bar {
-  background-color: #335E3B; /* Background color of the top bar */
-  color: #fff; /* Text color */
-  padding: 10px 0; /* Padding for top and bottom */
+  background-color: #335E3B;
+  /* Background color of the top bar */
+  color: #fff;
+  /* Text color */
+  padding: 10px 0;
+  /* Padding for top and bottom */
 }
 
 .top-bar p {
-  margin: 0; /* Reset margin for the paragraph */
-  text-align: left; /* Center the text */
+  margin: 0;
+  /* Reset margin for the paragraph */
+  text-align: left;
+  /* Center the text */
   padding-left: 20px;
   font-size: 1rem;
 }
 
 .top-bar a {
-  color: #fff; /* Text color for links */
-  text-decoration: none; /* Remove underlines from links */
-  margin-left: 0px; /* Add space between links */
-  padding-right: 20px; /* Add padding to the right */
+  color: #fff;
+  /* Text color for links */
+  text-decoration: none;
+  /* Remove underlines from links */
+  margin-left: 0px;
+  /* Add space between links */
+  padding-right: 20px;
+  /* Add padding to the right */
 }
 
 .top-bar a:hover {
-  text-decoration: underline; /* Underline links on hover */
+  text-decoration: underline;
+  /* Underline links on hover */
 }
 
 .top-bar i {
-  margin-right: 0; /* Adjust the margin-right value as needed */
+  margin-right: 0;
+  /* Adjust the margin-right value as needed */
 }
 
 /* ====================
 ##. Nav Bar Area
 ==================== */
 .navbar {
-  background-color: white; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* ====================
 ##. Hero Area
 ==================== */
-.hero{
+.hero {
   height: 80vh;
   display: flex;
   align-items: center;
@@ -92,12 +103,13 @@
 ##. ALTERNATING COLUMNS
 ==================== */
 @media screen and (min-width:768px) {
-  .alternate-1{
+  .alternate-1 {
     display: none;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .alternate-2{
+  .alternate-2 {
     display: none;
   }
 }
@@ -132,7 +144,8 @@
   line-height: 1.3;
 }
 
-.provider-container h3, p {
+.provider-container h3,
+p {
   font-size: 1.25rem;
 }
 
@@ -146,7 +159,7 @@
 
 .hidden {
   opacity: 0;
-  transition: all 2s;
+  transition: all 3s;
 }
 
 .show {
@@ -172,6 +185,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
+
 .card:hover {
   transform: translateY(-5px);
 }
@@ -181,19 +195,49 @@
 ==================== */
 
 .temp-container {
-  height: 40vh; 
-  background-color: #335E3B; 
-  display: flex; 
-  align-items: center; 
+  height: 40vh;
+  background-color: #335E3B;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .temp-subq {
-  background-color: white; 
-  width: 90%; 
-  height: 80%; 
-  display: grid; 
-  place-content: center; 
+  background-color: white;
+  width: 90%;
+  height: 80%;
+  display: grid;
+  place-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
+}
+
+.bi-size {
+  font-size: 3rem;
+}
+
+/* ====================
+##. Services Section
+==================== */
+
+.full-width-card {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-underline {
+  border-bottom: 2px solid #335E3B;
+  margin: 10px 0;
+}
+
+.card-text {
+  font-size: 18px;
 }

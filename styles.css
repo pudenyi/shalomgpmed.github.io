@@ -1,0 +1,213 @@
+/* ====================
+##. Top Bar
+==================== */
+.top-bar {
+  background-color: rgb(73, 173, 154);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.top-bar p {
+  margin: 0;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 0px;
+  padding-right: 20px;
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
+}
+
+.top-bar i {
+  margin-right: 0;
+}
+
+/* ====================
+  ##. Nav Bar Area
+  ==================== */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+/* ====================
+  ##. Hero Area
+  ==================== */
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* To position the pseudo-element */
+  background-image: url(images/hillcountry.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  /* Ensure text is white for contrast */
+  z-index: 1;
+  /* Ensure text appears above the overlay */
+}
+
+.hero-content {
+  text-align: right;
+}
+
+/* ====================
+    ##. Breadcrumb Area
+    ==================== */
+.breadcrumb-area {
+  background-image: url(images/breadcrumb-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  position: relative;
+}
+
+.breadcrumb-area h1 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.breadcrumb-area ul li {
+  color: white;
+}
+
+.breadcrumb-area ul li a {
+  color: white;
+}
+
+.breadcrumb-area ul li a:hover {
+  color: white;
+}
+
+.breadcrumb-area ul li i {
+  color: white;
+  margin-right: 8px;
+}
+
+/* ====================
+    ##. About Area
+    ==================== */
+
+/* Custom CSS for the smaller images */
+.small-image {
+  width: 400px;
+  height: 250px;
+}
+
+
+/* ====================
+    ##. Carousel
+    ==================== */
+
+.carousel-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.carousel-text {
+  font-size: 18px;
+  max-width: 80%;
+  /* Limit the width of the text */
+  margin: 0 auto;
+  /* Center the text horizontally */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+/* ====================
+  ##. Fade-in CSS
+  ==================== */
+
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.hidden-testamonial {
+  display: none;
+}
+
+.show {
+  opacity: 1;
+}
+
+p,
+li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: #f8f9fa;
+}
+
+section,
+header {
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hidden-logo {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .big-logo {
+    display: none;
+  }
+
+  .little-logo {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .big-logo {
+    display: block;
+  }
+
+  .little-logo {
+    display: none;
+  }
+}
+
+#Home,
+#About,
+#Doctor,
+#Services,
+#Testamonials,
+#Contact {
+  scroll-margin-top: 100px;
+  /* Adjust based on your navbar height */
+}
+
+footer ul li {
+  color: black;
+}
